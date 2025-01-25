@@ -1,8 +1,11 @@
 <html>
-    <title>Mini-Messaging Board</title>
+    <head>
+        <title>Mini-Messaging Board</title>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
     <body>
         <ul>
-            <%for(let i = 0; i < messages[i].length; i++) {%>
+            <%for(let i = 0; i < messages.length; i++) {%>
                 <li>
                     "<%=messages[i].text%>" - <%=messages[i].user%> (<%=messages[i].added%>)
                 </li>
