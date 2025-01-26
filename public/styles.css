@@ -1,3 +1,46 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    margin-bottom: 20px;
     color: red;
+    padding: 20px;
+    gap: 40px;
+}
+
+.navigate {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 2rem;
+    padding: 20px;
+    background-color: rgb(0, 255, 225);
+    border-radius: 20px;;
+}
+
+.msg-form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    width: 500px;
+}
+
+.msg-form > button {
+    font-size: 2rem;
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: aqua;
+    border: none;
+}
+
+input, textarea {
+    font-size: 2rem;
+    padding: 20px;
+    margin-bottom: 20px;
 }

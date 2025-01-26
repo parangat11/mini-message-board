@@ -1,7 +1,14 @@
-<form action="/new" method="POST">
-    <label for="msg">Message:</label>
-    <textarea name="messageText" id="msg" rows="40" cols="40"></textarea>
-    <label for="user">User:</label>
-    <input type="text" id="user" name="messageUser">
-    <button type="submit">Submit</button>
-</form>
+<html>
+    <head>
+        <title>Add Message</title>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <form action="/new" method="POST" class="msg-form">
+        <label for="msg">Message:</label>
+        <textarea name="messageText" id="msg"></textarea>
+        <label for="user">User:</label>
+        <input type="text" id="user" name="messageUser">
+        <button type="submit">Submit</button>
+    </form>
+    <a href="/" class="navigate">See All Messages</a>
+</html>

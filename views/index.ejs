@@ -4,13 +4,15 @@
         <link rel="stylesheet" href="/styles.css">
     </head>
     <body>
-        <ul>
+        <ul class="messages">
             <%for(let i = 0; i < messages.length; i++) {%>
                 <li>
-                    "<%=messages[i].text%>" - <%=messages[i].user%> (<%=messages[i].added%>)
+                    <a href="/messages/<%=i%>">    
+                        "<%=messages[i].text%>" - <%=messages[i].user%> (<%=messages[i].added%>)
+                    </a>
                 </li>
             <%}%>
         </ul>
-        <a href="/new"></a>
+        <a href="/new" class="navigate">Add new message</a>
     </body>
 </html>
