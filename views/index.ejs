@@ -8,7 +8,7 @@
             <%for(let i = 0; i < messages.length; i++) {%>
                 <li>
                     <a href="/messages/<%=i%>" class="message-link">    
-                        "<%=messages[i].text%>" - <%=messages[i].user%> (<%=messages[i].added%>)
+                        "<%=messages[i].message%>" - <%=messages[i].username%> (<%=messages[i].added%>)
                     </a>
                 </li>
             <%}%>
